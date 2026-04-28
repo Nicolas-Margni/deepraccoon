@@ -16,7 +16,7 @@ DeepRaccoon is a professional CLI security tool designed for defensive security 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/deepraccoon.git
+git clone https://github.com/Nicolas-Margni/deepraccoon.git
 cd deepraccoon
 
 # Install dependencies
