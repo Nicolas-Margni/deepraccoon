@@ -1,0 +1,499 @@
+{
+  "processes": [
+    {
+      "name": "ollama",
+      "description": "Local LLM model server"
+    },
+    {
+      "name": "lm-studio",
+      "description": "UI for running local models"
+    },
+    {
+      "name": "jan",
+      "description": "Open source local AI client"
+    },
+    {
+      "name": "llm",
+      "description": "Simon Willison LLM CLI"
+    },
+    {
+      "name": "koboldcpp",
+      "description": "KoboldCpp local LLM server"
+    }
+  ],
+  "api_domains": [
+    {
+      "domain": "api.openai.com",
+      "provider": "OpenAI"
+    },
+    {
+      "domain": "api.anthropic.com",
+      "provider": "Anthropic"
+    },
+    {
+      "domain": "generativelanguage.googleapis.com",
+      "provider": "Google Gemini"
+    },
+    {
+      "domain": "api.groq.com",
+      "provider": "Groq"
+    },
+    {
+      "domain": "api.mistral.ai",
+      "provider": "Mistral"
+    },
+    {
+      "domain": "api.cohere.com",
+      "provider": "Cohere"
+    },
+    {
+      "domain": "api.together.xyz",
+      "provider": "Together AI"
+    }
+  ],
+  "api_key_patterns": [
+    {
+      "pattern": "sk-[a-zA-Z0-9-]{20,}",
+      "provider": "OpenAI",
+      "severity": "CRITICAL"
+    },
+    {
+      "pattern": "sk-ant-[a-zA-Z0-9-]{90,}",
+      "provider": "Anthropic",
+      "severity": "CRITICAL"
+    },
+    {
+      "pattern": "AIza[a-zA-Z0-9_-]{35}",
+      "provider": "Google",
+      "severity": "CRITICAL"
+    },
+    {
+      "pattern": "gsk_[a-zA-Z0-9]{52}",
+      "provider": "Groq",
+      "severity": "CRITICAL"
+    },
+    {
+      "pattern": "Bearer [a-zA-Z0-9\\-._~+/]{40,}",
+      "provider": "Generic Bearer Token",
+      "severity": "HIGH"
+    }
+  ],
+  "python_packages": [
+    {
+      "name": "openai",
+      "description": "Official OpenAI client"
+    },
+    {
+      "name": "anthropic",
+      "description": "Official Anthropic client"
+    },
+    {
+      "name": "langchain",
+      "description": "LLM agent framework"
+    },
+    {
+      "name": "langchain-core",
+      "description": "LangChain core"
+    },
+    {
+      "name": "langchain-openai",
+      "description": "LangChain OpenAI integration"
+    },
+    {
+      "name": "ollama",
+      "description": "Python client for Ollama"
+    },
+    {
+      "name": "transformers",
+      "description": "Hugging Face models"
+    },
+    {
+      "name": "llama-cpp-python",
+      "description": "Python bindings for llama.cpp"
+    },
+    {
+      "name": "google-generativeai",
+      "description": "Official Google Gemini client"
+    },
+    {
+      "name": "groq",
+      "description": "Official Groq client"
+    },
+    {
+      "name": "mistralai",
+      "description": "Official Mistral AI client"
+    },
+    {
+      "name": "cohere",
+      "description": "Official Cohere client"
+    },
+    {
+      "name": "together",
+      "description": "Together AI client"
+    },
+    {
+      "name": "litellm",
+      "description": "Universal LLM API proxy"
+    },
+    {
+      "name": "instructor",
+      "description": "Structured outputs for LLMs"
+    }
+  ],
+  "config_paths": [
+    {
+      "path": "%APPDATA%\\Claude",
+      "tool": "Claude Desktop (Windows)",
+      "platform": "windows"
+    },
+    {
+      "path": "%APPDATA%\\LM Studio",
+      "tool": "LM Studio (Windows)",
+      "platform": "windows"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Programs\\Ollama",
+      "tool": "Ollama (Windows)",
+      "platform": "windows"
+    },
+    {
+      "path": "%USERPROFILE%\\.cursor",
+      "tool": "Cursor IDE",
+      "platform": "windows"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue",
+      "tool": "Continue (VS Code extension)",
+      "platform": "windows"
+    },
+    {
+      "path": "%APPDATA%\\Jan",
+      "tool": "Jan AI (Windows)",
+      "platform": "windows"
+    },
+    {
+      "path": "~/.cursor",
+      "tool": "Cursor IDE",
+      "platform": "unix"
+    },
+    {
+      "path": "~/.continue",
+      "tool": "Continue (VS Code extension)",
+      "platform": "unix"
+    },
+    {
+      "path": "~/Library/Application Support/Claude",
+      "tool": "Claude Desktop (macOS)",
+      "platform": "unix"
+    },
+    {
+      "path": "~/.config/claude_desktop_config.json",
+      "tool": "Claude Desktop (Linux)",
+      "platform": "unix"
+    }
+  ],
+  "browser_extensions": [
+    {
+      "id": "mdjnkfgefcibokbfgjakmnlhbhdmjnol",
+      "name": "ChatGPT for Chrome",
+      "browser": "chromium"
+    },
+    {
+      "id": "jgmjlbeapfkmedccaildadaelambcbnk",
+      "name": "Cursor Tab",
+      "browser": "chromium"
+    },
+    {
+      "id": "lpnpbmfbhbecjgkgijklnmgkalfhjmna",
+      "name": "Merlin AI",
+      "browser": "chromium"
+    },
+    {
+      "id": "bchdfdaijalmofnmondmabhnbbojnpmn",
+      "name": "Monica AI",
+      "browser": "chromium"
+    },
+    {
+      "id": "bgnkhhnnamicmpeenaelnjfhikgbkllg",
+      "name": "Perplexity AI",
+      "browser": "chromium"
+    },
+    {
+      "id": "klljhpedgkjhnicldilhfhknpihioopg",
+      "name": "Compose AI",
+      "browser": "chromium"
+    },
+    {
+      "id": "bbmgbfajkfmcfhcpambflfmjhfbmckpa",
+      "name": "ChatGPT for Google",
+      "browser": "chromium"
+    },
+    {
+      "id": "eollffkcakegifhacjnlnegohfdlidhn",
+      "name": "Tactiq (AI meeting notes)",
+      "browser": "chromium"
+    }
+  ],
+  "browser_ai_sites": [
+    {
+      "domain": "chat.openai.com",
+      "name": "ChatGPT",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "chatgpt.com",
+      "name": "ChatGPT",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "claude.ai",
+      "name": "Claude",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "gemini.google.com",
+      "name": "Google Gemini",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "copilot.microsoft.com",
+      "name": "Microsoft Copilot",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "perplexity.ai",
+      "name": "Perplexity",
+      "category": "search",
+      "severity": "LOW"
+    },
+    {
+      "domain": "you.com",
+      "name": "You.com AI",
+      "category": "search",
+      "severity": "LOW"
+    },
+    {
+      "domain": "midjourney.com",
+      "name": "Midjourney",
+      "category": "image",
+      "severity": "LOW"
+    },
+    {
+      "domain": "app.midjourney.com",
+      "name": "Midjourney",
+      "category": "image",
+      "severity": "LOW"
+    },
+    {
+      "domain": "runway.ml",
+      "name": "Runway",
+      "category": "video",
+      "severity": "LOW"
+    },
+    {
+      "domain": "app.runwayml.com",
+      "name": "Runway",
+      "category": "video",
+      "severity": "LOW"
+    },
+    {
+      "domain": "suno.com",
+      "name": "Suno AI",
+      "category": "audio",
+      "severity": "LOW"
+    },
+    {
+      "domain": "udio.com",
+      "name": "Udio",
+      "category": "audio",
+      "severity": "LOW"
+    },
+    {
+      "domain": "poe.com",
+      "name": "Poe",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "character.ai",
+      "name": "Character.AI",
+      "category": "chat",
+      "severity": "LOW"
+    },
+    {
+      "domain": "huggingface.co",
+      "name": "Hugging Face",
+      "category": "models",
+      "severity": "LOW"
+    },
+    {
+      "domain": "replicate.com",
+      "name": "Replicate",
+      "category": "models",
+      "severity": "LOW"
+    },
+    {
+      "domain": "elevenlabs.io",
+      "name": "ElevenLabs",
+      "category": "audio",
+      "severity": "LOW"
+    },
+    {
+      "domain": "synthesia.io",
+      "name": "Synthesia",
+      "category": "video",
+      "severity": "LOW"
+    },
+    {
+      "domain": "leonardo.ai",
+      "name": "Leonardo AI",
+      "category": "image",
+      "severity": "LOW"
+    },
+    {
+      "domain": "ideogram.ai",
+      "name": "Ideogram",
+      "category": "image",
+      "severity": "LOW"
+    },
+    {
+      "domain": "stability.ai",
+      "name": "Stability AI",
+      "category": "image",
+      "severity": "LOW"
+    },
+    {
+      "domain": "groq.com",
+      "name": "Groq Console",
+      "category": "api",
+      "severity": "MEDIUM"
+    },
+    {
+      "domain": "console.anthropic.com",
+      "name": "Anthropic Console",
+      "category": "api",
+      "severity": "MEDIUM"
+    },
+    {
+      "domain": "platform.openai.com",
+      "name": "OpenAI Platform",
+      "category": "api",
+      "severity": "MEDIUM"
+    },
+    {
+      "domain": "aistudio.google.com",
+      "name": "Google AI Studio",
+      "category": "api",
+      "severity": "MEDIUM"
+    }
+  ],
+  "installed_apps": [
+    {
+      "name": "Claude",
+      "process_hints": [
+        "claude"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\AnthropicClaude\\Claude.exe",
+        "%APPDATA%\\Claude\\Claude.exe"
+      ],
+      "description": "Claude Desktop app by Anthropic"
+    },
+    {
+      "name": "ChatGPT",
+      "process_hints": [
+        "chatgpt"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\ChatGPT\\ChatGPT.exe"
+      ],
+      "description": "ChatGPT Desktop app by OpenAI"
+    },
+    {
+      "name": "Microsoft Copilot",
+      "process_hints": [
+        "copilot"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Microsoft\\Copilot\\Copilot.exe"
+      ],
+      "description": "Microsoft Copilot Desktop app"
+    },
+    {
+      "name": "Notion AI",
+      "process_hints": [
+        "notion"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\Notion\\Notion.exe"
+      ],
+      "description": "Notion with built-in AI features"
+    },
+    {
+      "name": "Ollama",
+      "process_hints": [
+        "ollama"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\Ollama\\ollama.exe"
+      ],
+      "description": "Ollama local LLM runner"
+    },
+    {
+      "name": "LM Studio",
+      "process_hints": [
+        "lm studio",
+        "lmstudio"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\LM Studio\\LM Studio.exe"
+      ],
+      "description": "LM Studio local model UI"
+    },
+    {
+      "name": "Jan",
+      "process_hints": [
+        "jan"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\Jan\\Jan.exe"
+      ],
+      "description": "Jan open source local AI"
+    },
+    {
+      "name": "Perplexity",
+      "process_hints": [
+        "perplexity"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\Perplexity\\Perplexity.exe"
+      ],
+      "description": "Perplexity AI Desktop app"
+    },
+    {
+      "name": "Cursor",
+      "process_hints": [
+        "cursor"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\Cursor\\Cursor.exe"
+      ],
+      "description": "Cursor AI-powered code editor"
+    },
+    {
+      "name": "Windsurf",
+      "process_hints": [
+        "windsurf"
+      ],
+      "paths": [
+        "%LOCALAPPDATA%\\Programs\\Windsurf\\Windsurf.exe"
+      ],
+      "description": "Windsurf AI-powered code editor"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Reports — contain potentially sensitive scan data
+reports/
+
+# Environment files — may contain real API keys
+.env
+.env.local
+.env.production
+*.env
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
