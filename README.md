@@ -8,7 +8,7 @@ DeepRaccoon is a professional CLI security tool designed for defensive security 
 
 ## 📸 Screenshots
 
-> *(Add your screenshots here)*
+![Image Alt](https://github.com/Nicolas-Margni/deepraccoon/blob/844ee45d6353557c134a1baed21171c5ad7aa463/pictures/screenshot-1.png)
 
 ---
 
